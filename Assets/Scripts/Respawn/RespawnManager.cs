@@ -7,6 +7,8 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private List<GameObject> listOfRespawns;
     [SerializeField] private GameObject character;
 
+    [SerializeField] private Animator blackFadingAnimation;
+
     private PlayerInputHandler playerInputHandler;
 
     void Start()
@@ -19,8 +21,7 @@ public class RespawnManager : MonoBehaviour
     {
         if (playerInputHandler.playerIsDead)
         {
-            character.transform.position = listOfRespawns[listOfRespawns.Count -1].transform.position;
-            playerInputHandler.playerIsDead = false;
+            TeleportToRespawnPoint();
         }
             
     }
@@ -28,5 +29,11 @@ public class RespawnManager : MonoBehaviour
     {
         if (!listOfRespawns.Contains(newRespawnPoint))
             listOfRespawns.Add(newRespawnPoint);
+    }
+
+    public void TeleportToRespawnPoint ()
+    {
+        character.transform.position = listOfRespawns[listOfRespawns.Count -1].transform.position;
+        playerInputHandler.playerIsDead = false;
     }
 }
