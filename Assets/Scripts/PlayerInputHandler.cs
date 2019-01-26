@@ -13,10 +13,12 @@ public class PlayerInputHandler : MonoBehaviour
     public bool pullGripActive { get; set; }
     public bool handleActive { get; set; }
 
+    public bool isJumping;
+
     public bool playerIsDead { get; set; }
 
     public Vector3 playerGravity;
-    private Vector3 _velocity;
+    public Vector3 _velocity;
     private Vector3 moveDirection;
 
     private Collider[] hitColliders;
@@ -39,6 +41,9 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Update()
     {
+        if (_controller.isGrounded)
+            isJumping = false;
+
         Interact();
 
         _velocity = _controller.velocity;
@@ -52,17 +57,23 @@ public class PlayerInputHandler : MonoBehaviour
 
         bool jumpKeys = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
         if (jumpKeys && _controller.isGrounded && !pushGripActive || jumpKeys && _controller.isGrounded && !handleActive)
+        {
+            isJumping = true;
             _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
+        }
+            
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
 
         _velocity.x = Mathf.Lerp(_velocity.x, horizontalAxis * playerSpeed, Time.deltaTime * movementDamping);
         _velocity += playerGravity * Time.deltaTime;
-
+        
         _controller.Move(_velocity * Time.deltaTime);
 
         if (horizontalAxis != 0 && !pushGripActive && !pullGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
+
+        //Debug.Log("velocidade = " + _velocity.x);
     }
 
     private void Interact()

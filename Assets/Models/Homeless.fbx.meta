@@ -277,7 +277,13 @@ ModelImporter:
     13700000: eyes_Homeless_girl
     13700002: Homeless_girl
     13700004: Tedbear
-  externalObjects: {}
+    2186277476908879412: ImportLogs
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.001
+    second: {fileID: 2100000, guid: 40cde95295cb0db4f90e1fd8ccf25a9b, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -297,18 +303,494 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 1
+    animationCompression: 3
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|APadrao
+      takeName: Armature_Homeless_girl|APadrao
+      firstFrame: 0
+      lastFrame: 1
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Death_drowning
+      takeName: Armature_Homeless_girl|Death_drowning
+      firstFrame: 0
+      lastFrame: 59
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Death_normal
+      takeName: Armature_Homeless_girl|Death_normal
+      firstFrame: 0
+      lastFrame: 51
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Death_shock
+      takeName: Armature_Homeless_girl|Death_shock
+      firstFrame: 0
+      lastFrame: 31
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Idle
+      takeName: Armature_Homeless_girl|Idle
+      firstFrame: 0
+      lastFrame: 69
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Jump_air
+      takeName: Armature_Homeless_girl|Jump_air
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Jump_full
+      takeName: Armature_Homeless_girl|Jump_full
+      firstFrame: 0
+      lastFrame: 34
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Jump_ground
+      takeName: Armature_Homeless_girl|Jump_ground
+      firstFrame: 0
+      lastFrame: 16
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Jump_landing
+      takeName: Armature_Homeless_girl|Jump_landing
+      firstFrame: 0
+      lastFrame: 14
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Lever
+      takeName: Armature_Homeless_girl|Lever
+      firstFrame: 0
+      lastFrame: 56
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Pulling
+      takeName: Armature_Homeless_girl|Pulling
+      firstFrame: 0
+      lastFrame: 40
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Pulling_full
+      takeName: Armature_Homeless_girl|Pulling_full
+      firstFrame: 0
+      lastFrame: 83
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Pulling_intro
+      takeName: Armature_Homeless_girl|Pulling_intro
+      firstFrame: 0
+      lastFrame: 116
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Pulling_out
+      takeName: Armature_Homeless_girl|Pulling_out
+      firstFrame: 0
+      lastFrame: 20
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Pushing
+      takeName: Armature_Homeless_girl|Pushing
+      firstFrame: 0
+      lastFrame: 36
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Run
+      takeName: Armature_Homeless_girl|Run
+      firstFrame: 0
+      lastFrame: 46
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Armature_Homeless_girl|Walk
+      takeName: Armature_Homeless_girl|Walk
+      firstFrame: 0
+      lastFrame: 68
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.5
     meshCompression: 0
     addColliders: 0
     useSRGBMaterialColor: 1
@@ -329,7 +811,7 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
-    previousCalculatedGlobalScale: 0.01
+    previousCalculatedGlobalScale: 0.015
     hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
@@ -344,7 +826,623 @@ ModelImporter:
   humanDescription:
     serializedVersion: 2
     human: []
-    skeleton: []
+    skeleton:
+    - name: Homeless(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Armature_Homeless_girl
+      parentName: Homeless(Clone)
+      position: {x: -0, y: 0.009284891, z: 0.032172553}
+      rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
+      scale: {x: 100, y: 100, z: 100}
+    - name: Base
+      parentName: Armature_Homeless_girl
+      position: {x: 6.2242167e-19, y: -0.000057145, z: -0.000038659997}
+      rotation: {x: 1, y: -4.4408918e-16, z: 0.00000043312576, w: -6.123215e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pe.L
+      parentName: Base
+      position: {x: -0.0010807302, y: 0.00008709892, z: -0.0005225086}
+      rotation: {x: -0.00000038463008, y: 0.99893254, z: 0.046193015, w: -0.0000074826057}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: Pe_Ponta.L
+      parentName: Pe.L
+      position: {x: -1.4657075e-12, y: 0.0013695264, z: -1.0351186e-11}
+      rotation: {x: 0.000002053295, y: 0.9990859, z: 0.04274821, w: 0.00006379564}
+      scale: {x: 1, y: 1.0000005, z: 1}
+    - name: Pe_Ponta.L_end
+      parentName: Pe_Ponta.L
+      position: {x: -0, y: 0.00096457807, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pe.R
+      parentName: Base
+      position: {x: 0.0010807312, y: 0.00008709892, z: -0.000522507}
+      rotation: {x: 0.00000034797463, y: 0.99893254, z: 0.046193015, w: 0.000008414013}
+      scale: {x: 1, y: 0.9999998, z: 1}
+    - name: Pe_Ponta.R
+      parentName: Pe.R
+      position: {x: -2.8673598e-11, y: 0.0013695258, z: -1.713488e-11}
+      rotation: {x: -0.0000020519728, y: 0.9990859, z: 0.042748194, w: -0.00006392886}
+      scale: {x: 1, y: 1.0000002, z: 0.99999994}
+    - name: Pe_Ponta.R_end
+      parentName: Pe_Ponta.R
+      position: {x: -0, y: 0.00096457824, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Joelho.L
+      parentName: Base
+      position: {x: -0.0010347478, y: 0.0053135063, z: -0.0040629175}
+      rotation: {x: 0, y: -0.0000000317865, z: 6.114021e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Joelho.L_end
+      parentName: Joelho.L
+      position: {x: -0, y: 0.0015859446, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Joelho.R
+      parentName: Base
+      position: {x: 0.0010347548, y: 0.0053135063, z: -0.004062916}
+      rotation: {x: 0, y: -0.0000000317865, z: 6.114021e-30, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Joelho.R_end
+      parentName: Joelho.R
+      position: {x: -0, y: 0.0015859446, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Quadril
+      parentName: Armature_Homeless_girl
+      position: {x: 6.2242167e-19, y: -0.00013659736, z: 0.0076682135}
+      rotation: {x: 1, y: -6.3870027e-16, z: 0.00000067154434, w: -6.123191e-17}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cintura
+      parentName: Quadril
+      position: {x: -1.6260296e-17, y: 0, z: 0}
+      rotation: {x: -0.7008776, y: -0.00000090441466, z: -0.000000052653792, w: 0.7132816}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Coluna
+      parentName: Cintura
+      position: {x: -1.6434785e-17, y: 0.0022647395, z: 0}
+      rotation: {x: -0.0046388865, y: 3.1101544e-10, z: 0.000000005531995, w: 0.9999893}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Peito
+      parentName: Coluna
+      position: {x: -1.2165286e-17, y: 0.0024035135, z: -6.984919e-12}
+      rotation: {x: -0.05019857, y: -0.00000000838593, z: 0.00000006026901, w: 0.99873924}
+      scale: {x: 1, y: 0.99999994, z: 0.9999999}
+    - name: Ombro.L
+      parentName: Peito
+      position: {x: -0.0003801927, y: 0.0020845123, z: 0.00013330975}
+      rotation: {x: -0.0017585023, y: -0.11962919, z: 0.79004467, w: 0.6012613}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: "Bra\xE7o.L"
+      parentName: Ombro.L
+      position: {x: 7.98027e-10, y: 0.0015337483, z: 1.3969838e-11}
+      rotation: {x: 0.066437736, y: 0.029848574, z: -0.11056474, w: 0.9911965}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: "Antebra\xE7o.L"
+      parentName: "Bra\xE7o.L"
+      position: {x: 6.8255757e-10, y: 0.0040594726, z: 2.7939677e-11}
+      rotation: {x: 0.006131658, y: -0.00041749247, z: -0.03898289, w: 0.999221}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: "Antebra\xE7o.L.001.L"
+      parentName: "Antebra\xE7o.L"
+      position: {x: 4.583853e-11, y: 0.0021982589, z: -2.7939677e-11}
+      rotation: {x: 0.006609362, y: 0.00873343, z: -0.009550647, w: 0.99989444}
+      scale: {x: 0.9999999, y: 1, z: 1}
+    - name: Indicador.L
+      parentName: "Antebra\xE7o.L.001.L"
+      position: {x: -0.00002577337, y: 0.001079987, z: 0.00034587755}
+      rotation: {x: -0.000000046921098, y: 0.00000007052408, z: -0.03535155, w: 0.9993749}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Indicador.001.L
+      parentName: Indicador.L
+      position: {x: -1.2111286e-10, y: 0.00028287637, z: -6.5703705e-12}
+      rotation: {x: 0.000000038673015, y: -0.000000018003242, z: 0.027415065, w: 0.99962413}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Indicador.002.L
+      parentName: Indicador.001.L
+      position: {x: -6.2094474e-10, y: 0.00034867704, z: 2.7635494e-12}
+      rotation: {x: 0.000000001954229, y: 0.000000012978025, z: -0.011463499, w: 0.9999343}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Indicador.002.L_end
+      parentName: Indicador.002.L
+      position: {x: -0, y: 0.00032197536, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Medio.L
+      parentName: "Antebra\xE7o.L.001.L"
+      position: {x: 0.0000020185528, y: 0.0010834858, z: 0.000110906316}
+      rotation: {x: -0.0000000030292533, y: -0.00000009030515, z: -0.03352578, w: 0.99943787}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Medio.001.L
+      parentName: Medio.L
+      position: {x: 0.0000000010863781, y: 0.00029225615, z: -4.4337732e-12}
+      rotation: {x: -0.0000000037707766, y: 0.00000039529706, z: 0.026635285, w: 0.99964523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Medio.002.L
+      parentName: Medio.001.L
+      position: {x: 6.998112e-10, y: 0.00036159635, z: -5.3705838e-12}
+      rotation: {x: 0.0000000037500927, y: -0.00000022779908, z: -0.008972862, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Medio.002.L_end
+      parentName: Medio.002.L
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anelar.L
+      parentName: "Antebra\xE7o.L.001.L"
+      position: {x: 0.000019291077, y: 0.0010842232, z: -0.00012986663}
+      rotation: {x: -0.0000000029871656, y: -0.0000000890505, z: -0.033525772, w: 0.99943787}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Anelar.001.L
+      parentName: Anelar.L
+      position: {x: 2.5411762e-10, y: 0.00029225624, z: -3.159069e-11}
+      rotation: {x: -0.000000023132984, y: 0.00000039423114, z: 0.02663528, w: 0.99964523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anelar.002.L
+      parentName: Anelar.001.L
+      position: {x: 1.0896883e-12, y: 0.00036159612, z: -1.4181989e-11}
+      rotation: {x: 0.0000000032473626, y: -0.000000229536, z: -0.008972868, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1}
+    - name: Anelar.002.L_end
+      parentName: Anelar.002.L
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mindinho.L
+      parentName: "Antebra\xE7o.L.001.L"
+      position: {x: 0.0000105967165, y: 0.0010315889, z: -0.00033292812}
+      rotation: {x: -0.000000050760182, y: -0.00000008744799, z: -0.033525776, w: 0.99943787}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Antebra\xE7o.L.013.L"
+      parentName: Mindinho.L
+      position: {x: -5.706318e-10, y: 0.00029225665, z: -2.2668051e-11}
+      rotation: {x: 0.000000024649944, y: 0.00000039295796, z: 0.02663528, w: 0.99964523}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Antebra\xE7o.L.012.L"
+      parentName: "Antebra\xE7o.L.013.L"
+      position: {x: -1.6085802e-10, y: 0.00036159647, z: -1.889675e-11}
+      rotation: {x: 0.0000000032473608, y: -0.000000229536, z: -0.008972869, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: "Antebra\xE7o.L.012.L_end"
+      parentName: "Antebra\xE7o.L.012.L"
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Antebra\xE7o.L.002.L"
+      parentName: "Antebra\xE7o.L.001.L"
+      position: {x: -0.000026435286, y: 0.00061934214, z: 0.0004720317}
+      rotation: {x: 0.5434168, y: -0.5438121, z: -0.30721152, w: 0.56088114}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: "Antebra\xE7o.L.003.L"
+      parentName: "Antebra\xE7o.L.002.L"
+      position: {x: 2.933666e-10, y: 0.0003563261, z: 3.282912e-10}
+      rotation: {x: 0.10724314, y: -0.063061945, z: 0.15424168, w: 0.9801692}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: "Antebra\xE7o.L.003.L_end"
+      parentName: "Antebra\xE7o.L.003.L"
+      position: {x: -0, y: 0.00038999057, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pescoco
+      parentName: Peito
+      position: {x: 7.567065e-17, y: 0.0023737822, z: 2.0954757e-11}
+      rotation: {x: 0.04607123, y: 0.0000006038625, z: -0.00000002785026, w: 0.99893814}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabeca
+      parentName: Pescoco
+      position: {x: 7.9409337e-25, y: 0.00089823955, z: -1.7462298e-12}
+      rotation: {x: -0.014951344, y: -2.2687196e-13, z: -3.1291127e-15, w: 0.99988824}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Tranca.L
+      parentName: Cabeca
+      position: {x: -0.00092302007, y: 0.0021377928, z: -0.0010644543}
+      rotation: {x: -0.6070585, y: 0.071876034, z: 0.20855248, w: 0.76342624}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Tranca.001.L
+      parentName: Tranca.L
+      position: {x: -0, y: 0.0017185456, z: 1.816079e-10}
+      rotation: {x: -0.054500528, y: 0.024686307, z: 0.0077472143, w: 0.9981785}
+      scale: {x: 1, y: 1.0000002, z: 0.99999994}
+    - name: Tranca.002.L
+      parentName: Tranca.001.L
+      position: {x: 3.352761e-10, y: 0.0011745248, z: -0.0000000013690441}
+      rotation: {x: 0.021787217, y: -0.011833341, z: 0.0033533354, w: 0.99968696}
+      scale: {x: 1, y: 1, z: 1.0000001}
+    - name: Tranca.003.L
+      parentName: Tranca.002.L
+      position: {x: -2.2351741e-10, y: 0.0010753418, z: 0.0000000013411044}
+      rotation: {x: -0.016267624, y: 0.009135791, z: -0.0035364747, w: 0.9998197}
+      scale: {x: 0.9999999, y: 0.9999999, z: 1}
+    - name: Tranca.004.L
+      parentName: Tranca.003.L
+      position: {x: -0, y: 0.001081798, z: 3.911555e-10}
+      rotation: {x: -0.00427832, y: 0.009561447, z: -0.025811832, w: 0.9996119}
+      scale: {x: 1.0000001, y: 1.0000001, z: 1.0000001}
+    - name: Tranca.004.L_end
+      parentName: Tranca.004.L
+      position: {x: -0, y: 0.0017471032, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tranca.R
+      parentName: Cabeca
+      position: {x: 0.00092302007, y: 0.0031435448, z: -0.00079852657}
+      rotation: {x: -0.4586946, y: -0.099648885, z: -0.18186176, w: 0.86405766}
+      scale: {x: 1.0000001, y: 1, z: 1}
+    - name: Tranca.001.R
+      parentName: Tranca.R
+      position: {x: -2.7939676e-10, y: 0.0017185439, z: -5.500624e-10}
+      rotation: {x: -0.055034194, y: -0.024360178, z: 0.0012084314, w: 0.9981866}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: Tranca.002.R
+      parentName: Tranca.001.R
+      position: {x: -4.4703483e-10, y: 0.0011745255, z: 8.381903e-10}
+      rotation: {x: 0.020937497, y: 0.009347724, z: -0.006893042, w: 0.99971336}
+      scale: {x: 0.99999994, y: 0.9999999, z: 1.0000001}
+    - name: Tranca.003.R
+      parentName: Tranca.002.R
+      position: {x: -0, y: 0.0010753421, z: -0.0000000018527497}
+      rotation: {x: -0.015461876, y: -0.0069047958, z: 0.006169324, w: 0.99983764}
+      scale: {x: 1, y: 0.99999994, z: 0.99999994}
+    - name: Tranca.004.R
+      parentName: Tranca.003.R
+      position: {x: -3.352761e-10, y: 0.0010817983, z: -0.0000000014842954}
+      rotation: {x: -0.00027939124, y: 0.00017491794, z: 0.026162542, w: 0.9996577}
+      scale: {x: 0.99999994, y: 0.9999998, z: 0.9999999}
+    - name: Tranca.004.R_end
+      parentName: Tranca.004.R
+      position: {x: -0, y: 0.001747103, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olho
+      parentName: Cabeca
+      position: {x: 0.0010295317, y: 0.0015113887, z: 0.0016557197}
+      rotation: {x: 0.01495129, y: -4.802138e-16, z: -7.1785984e-18, w: 0.99988824}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Olho_end
+      parentName: Olho
+      position: {x: -0, y: 0.0006048059, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olho.001
+      parentName: Cabeca
+      position: {x: 0.0012068154, y: 0.0015735686, z: 0.000628075}
+      rotation: {x: 0.0149513325, y: -4.802138e-16, z: -7.178576e-18, w: 0.99988824}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Olho.001_end
+      parentName: Olho.001
+      position: {x: -0, y: 0.0006048059, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Olho_piscar
+      parentName: Cabeca
+      position: {x: 0.0010295317, y: 0.0012121492, z: 0.0011553013}
+      rotation: {x: 0.014951375, y: -4.80207e-16, z: 1.2447485e-16, w: 0.99988824}
+      scale: {x: 1, y: 0.9999999, z: 0.99999994}
+    - name: Olho_piscar_end
+      parentName: Olho_piscar
+      position: {x: -0, y: 0.0012329435, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ombro.R
+      parentName: Peito
+      position: {x: 0.00038019323, y: 0.0020845113, z: 0.0001333086}
+      rotation: {x: -0.0017594359, y: 0.119629964, z: -0.7900446, w: 0.60126126}
+      scale: {x: 1.0000002, y: 1.0000001, z: 1}
+    - name: "Bra\xE7o.R"
+      parentName: Ombro.R
+      position: {x: 2.7634087e-10, y: 0.0015337475, z: 1.11758706e-10}
+      rotation: {x: 0.06643779, y: -0.029848602, z: 0.11056473, w: 0.9911965}
+      scale: {x: 0.99999994, y: 1.0000001, z: 0.99999994}
+    - name: "Antebra\xE7o.R"
+      parentName: "Bra\xE7o.R"
+      position: {x: -0.0000000011370139, y: 0.004059471, z: -1.3969838e-11}
+      rotation: {x: 0.0061316094, y: 0.00041769925, z: 0.038983066, w: 0.99922097}
+      scale: {x: 0.9999999, y: 0.9999998, z: 0.99999994}
+    - name: "Antebra\xE7o.L.001.R"
+      parentName: "Antebra\xE7o.R"
+      position: {x: 0.0000000014393298, y: 0.002198257, z: -2.7939677e-11}
+      rotation: {x: -0.009256797, y: 0.9985936, z: 0.0070140394, w: 0.051729467}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: Indicador.R
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: -0.00005540077, y: 0.0010799819, z: -0.0003423832}
+      rotation: {x: 0.03531934, y: 0.9984502, z: -0.0015206174, w: -0.042981297}
+      scale: {x: 0.99999994, y: 0.99999976, z: 0.99999994}
+    - name: Indicador.001.R
+      parentName: Indicador.R
+      position: {x: 5.6140487e-10, y: 0.00028287715, z: -5.318512e-12}
+      rotation: {x: -0.000000030504474, y: -0.000000020810734, z: -0.027415035, w: 0.9996242}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Indicador.002.R
+      parentName: Indicador.001.R
+      position: {x: -7.7623086e-10, y: 0.00034867815, z: -2.9457237e-12}
+      rotation: {x: 0.000000002363503, y: -0.000000015521046, z: 0.011463501, w: 0.9999343}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Indicador.002.R_end
+      parentName: Indicador.002.R
+      position: {x: -0, y: 0.00032197536, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Medio.R
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: -0.0000075194603, y: 0.0010834816, z: -0.00011066952}
+      rotation: {x: 0.033495277, y: 0.9985131, z: -0.0014417772, w: -0.042983796}
+      scale: {x: 0.9999999, y: 0.9999997, z: 0.99999994}
+    - name: Medio.001.R
+      parentName: Medio.R
+      position: {x: -1.9133409e-10, y: 0.0002922563, z: 6.0219095e-12}
+      rotation: {x: 0.0000000016298455, y: -0.00000039739825, z: -0.02663528, w: 0.99964523}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Medio.002.R
+      parentName: Medio.001.R
+      position: {x: 6.412934e-10, y: 0.00036159536, z: 1.6955503e-12}
+      rotation: {x: 0.000000003505002, y: 0.00000022744075, z: 0.008972867, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Medio.002.R_end
+      parentName: Medio.002.R
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Anelar.R
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: 0.000030380912, y: 0.0010842197, z: 0.00012772839}
+      rotation: {x: 0.03349525, y: 0.9985131, z: -0.0014416472, w: -0.042983793}
+      scale: {x: 0.9999999, y: 0.9999997, z: 0.99999994}
+    - name: Anelar.001.R
+      parentName: Anelar.R
+      position: {x: -0.0000000011445735, y: 0.0002922562, z: -2.8929765e-11}
+      rotation: {x: 0.000000057380205, y: -0.00000039817192, z: -0.026635274, w: 0.99964523}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Anelar.002.R
+      parentName: Anelar.001.R
+      position: {x: 5.01555e-10, y: 0.00036159577, z: -1.9893632e-11}
+      rotation: {x: 0.00000000386173, y: 0.00000023092362, z: 0.008972872, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Anelar.002.R_end
+      parentName: Anelar.002.R
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Mindinho.R
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: 0.00003916723, y: 0.0010315854, z: 0.00033078593}
+      rotation: {x: 0.03349527, y: 0.9985131, z: -0.0014416906, w: -0.042983796}
+      scale: {x: 0.9999999, y: 0.9999997, z: 0.99999994}
+    - name: "Antebra\xE7o.L.013.R"
+      parentName: Mindinho.R
+      position: {x: -9.1100044e-11, y: 0.0002922567, z: 4.351772e-11}
+      rotation: {x: 0.000000043168882, y: -0.00000039889147, z: -0.02663528, w: 0.99964523}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: "Antebra\xE7o.L.012.R"
+      parentName: "Antebra\xE7o.L.013.R"
+      position: {x: -2.3029742e-10, y: 0.00036159533, z: 3.6310233e-11}
+      rotation: {x: 0.000000002987819, y: 0.00000022918587, z: 0.008972867, w: 0.99995977}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: "Antebra\xE7o.L.012.R_end"
+      parentName: "Antebra\xE7o.L.012.R"
+      position: {x: -0, y: 0.000352533, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Antebra\xE7o.L.002.R"
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: -0.000066902954, y: 0.0006193397, z: -0.0004680129}
+      rotation: {x: -0.28355604, y: -0.5369737, z: 0.5561265, w: 0.56743157}
+      scale: {x: 0.9999998, y: 0.9999997, z: 0.9999998}
+    - name: "Antebra\xE7o.L.003.R"
+      parentName: "Antebra\xE7o.L.002.R"
+      position: {x: -1.5366822e-10, y: 0.0003563263, z: -6.426125e-10}
+      rotation: {x: 0.107243136, y: 0.06306236, z: -0.15424156, w: 0.9801692}
+      scale: {x: 1, y: 1.0000001, z: 1}
+    - name: "Antebra\xE7o.L.003.R_end"
+      parentName: "Antebra\xE7o.L.003.R"
+      position: {x: -0, y: 0.00038999066, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ombro.L.001
+      parentName: "Antebra\xE7o.L.001.R"
+      position: {x: -0.0017692042, y: 0.00078769843, z: -0.00062067487}
+      rotation: {x: 0.03286424, y: 0.015618865, z: -0.1610079, w: 0.98628217}
+      scale: {x: 0.9999999, y: 1, z: 0.9999998}
+    - name: "Bra\xE7o.L.001"
+      parentName: Ombro.L.001
+      position: {x: 0.0000000014406396, y: 0.0008183186, z: 1.3969838e-10}
+      rotation: {x: -0.0260299, y: 0.0000007003282, z: -0.021020377, w: 0.9994402}
+      scale: {x: 0.99999994, y: 1, z: 0.99999994}
+    - name: "Antebra\xE7o.L.001"
+      parentName: "Bra\xE7o.L.001"
+      position: {x: -9.586801e-10, y: 0.0008255552, z: -5.5879353e-11}
+      rotation: {x: -0.0070555382, y: -0.0021982181, z: 0.09046797, w: 0.99587196}
+      scale: {x: 1.0000001, y: 1, z: 1.0000001}
+    - name: Cintura.001
+      parentName: "Antebra\xE7o.L.001"
+      position: {x: -0.00005528628, y: 0.00085119426, z: -0.00008394399}
+      rotation: {x: 0.78164566, y: -0.62265956, z: -0.021068944, w: 0.029688444}
+      scale: {x: 1.0000001, y: 1.0000005, z: 0.9999999}
+    - name: Coluna.001
+      parentName: Cintura.001
+      position: {x: 4.3480747e-10, y: 0.00046114408, z: 1.24163076e-11}
+      rotation: {x: 0.0076687783, y: -0.000000026559904, z: -0.0000000015842508, w: 0.9999706}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Peito.001
+      parentName: Coluna.001
+      position: {x: 4.887443e-10, y: 0.0006450763, z: -2.2340314e-11}
+      rotation: {x: 0.03692667, y: 3.5980767e-14, z: 0.00000004079174, w: 0.999318}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Perna.L.001
+      parentName: Peito.001
+      position: {x: 0.00054412143, y: 0.0008389965, z: -0.000010780437}
+      rotation: {x: 0.0877706, y: -0.01062033, z: -0.24721974, w: 0.9649176}
+      scale: {x: 1, y: 0.99999994, z: 1.0000001}
+    - name: Canela.L.001
+      parentName: Perna.L.001
+      position: {x: 6.705522e-10, y: 0.00050812203, z: 5.0291415e-10}
+      rotation: {x: -0.2316833, y: -0.00055209943, z: 0.005304132, w: 0.97277665}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: Canela.L.001_end
+      parentName: Canela.L.001
+      position: {x: -0, y: 0.00049673434, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Perna.R.001
+      parentName: Peito.001
+      position: {x: -0.00054412143, y: 0.0008389973, z: -0.000010781716}
+      rotation: {x: 0.08777029, y: 0.010619118, z: 0.24721968, w: 0.96491766}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1.0000001}
+    - name: Canela.R.001
+      parentName: Perna.R.001
+      position: {x: -5.378388e-10, y: 0.0005081226, z: -2.2351741e-10}
+      rotation: {x: -0.23168315, y: 0.0005522191, z: -0.00530412, w: 0.9727767}
+      scale: {x: 0.99999994, y: 0.9999998, z: 1}
+    - name: Canela.R.001_end
+      parentName: Canela.R.001
+      position: {x: -0, y: 0.00049673434, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Pescoco.001
+      parentName: Cintura.001
+      position: {x: 4.444593e-10, y: 0.00000039503806, z: -0.000016503955}
+      rotation: {x: 0.000000015709334, y: -0.011935861, z: 0.9999288, w: 1.8751772e-10}
+      scale: {x: 1, y: 1.0000001, z: 1.000324}
+    - name: Cabeca.001
+      parentName: Pescoco.001
+      position: {x: -0.0000000012316911, y: 0.00019687403, z: 3.1377565e-12}
+      rotation: {x: -2.4025438e-13, y: -0.000000010072541, z: 8.680773e-15, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cabeca.001_end
+      parentName: Cabeca.001
+      position: {x: -0, y: 0.0012480399, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Ombro.R.001
+      parentName: Cintura.001
+      position: {x: -0.00030744064, y: 0.000017121933, z: 0.000028058916}
+      rotation: {x: -0.053991932, y: -0.04774024, z: 0.5745913, w: 0.81526107}
+      scale: {x: 0.99999994, y: 1, z: 1}
+    - name: "Bra\xE7o.R.001"
+      parentName: Ombro.R.001
+      position: {x: -1.6218109e-10, y: 0.00047180467, z: 0}
+      rotation: {x: 0.05817214, y: 0.00069415703, z: -0.010977309, w: 0.99824595}
+      scale: {x: 1, y: 1, z: 1}
+    - name: "Antebra\xE7o.R.001"
+      parentName: "Bra\xE7o.R.001"
+      position: {x: 9.23319e-10, y: 0.0008617849, z: 4.1909514e-11}
+      rotation: {x: 0.012676739, y: 0.00014495327, z: 0.018738136, w: 0.99974406}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: "Antebra\xE7o.R.001_end"
+      parentName: "Antebra\xE7o.R.001"
+      position: {x: -0, y: 0.00085607264, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saia.L
+      parentName: Cintura
+      position: {x: -0.0017219838, y: 0.001398746, z: -0.000024537112}
+      rotation: {x: -0.012875154, y: 0.06780931, z: 0.97634834, w: 0.20489034}
+      scale: {x: 0.99999845, y: 0.9999999, z: 0.9999998}
+    - name: Saia.L.001
+      parentName: Saia.L
+      position: {x: -1.0652002e-10, y: 0.0019013038, z: -6.4610504e-11}
+      rotation: {x: 3.2014214e-10, y: -0.00000016251579, z: -0.000000015483238, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saia.L.001_end
+      parentName: Saia.L.001
+      position: {x: -0, y: 0.0019013023, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saia.R
+      parentName: Cintura
+      position: {x: 0.0017219838, y: 0.001398746, z: -0.00002454122}
+      rotation: {x: 0.012876318, y: 0.06780979, z: 0.97634834, w: -0.2048903}
+      scale: {x: 0.9999996, y: 1, z: 1}
+    - name: Saia.R.001
+      parentName: Saia.R
+      position: {x: 1.816079e-10, y: 0.0019013032, z: 1.4624674e-10}
+      rotation: {x: 0.0000000048021325, y: 0.00000010139775, z: 0.00000006111805,
+        w: 1}
+      scale: {x: 0.99999994, y: 0.99999994, z: 1}
+    - name: Saia.R.001_end
+      parentName: Saia.R.001
+      position: {x: -0, y: 0.0019013023, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saia_Frente
+      parentName: Cintura
+      position: {x: 0.0000000015061061, y: 0.0014143824, z: 0.0012626249}
+      rotation: {x: 0.9885675, y: 0.00000019777112, z: 0.00000011747952, w: 0.15077926}
+      scale: {x: 1, y: 1, z: 0.99999934}
+    - name: Saia_Frente.001
+      parentName: Saia_Frente
+      position: {x: -2.8057913e-16, y: 0.0017937538, z: 1.11758706e-10}
+      rotation: {x: -0.000000014901159, y: 1.4921399e-13, z: -7.5733514e-14, w: 1}
+      scale: {x: 1, y: 1.0000001, z: 1.0000001}
+    - name: Saia_Frente.001_end
+      parentName: Saia_Frente.001
+      position: {x: -0, y: 0.0017937534, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Saia_Costas
+      parentName: Cintura
+      position: {x: -0.0000000015643589, y: 0.0013692221, z: -0.0013114607}
+      rotation: {x: 0.9904795, y: -0.00000018056294, z: 0.000000117707465, w: -0.13766009}
+      scale: {x: 1, y: 1.0000001, z: 0.99999946}
+    - name: Saia_Costas.001
+      parentName: Saia_Costas
+      position: {x: 2.8587828e-16, y: 0.001798337, z: -1.11758706e-10}
+      rotation: {x: -0.000000007450581, y: 2.7711167e-13, z: 6.9470525e-14, w: 1}
+      scale: {x: 1, y: 0.99999994, z: 1}
+    - name: Saia_Costas.001_end
+      parentName: Saia_Costas.001
+      position: {x: -0, y: 0.0017983369, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Perna.L
+      parentName: Quadril
+      position: {x: -0.0009885561, y: 1.2750217e-18, z: 0.000022988781}
+      rotation: {x: -0.0042166137, y: 0.74697596, z: 0.66482043, w: 0.0048044226}
+      scale: {x: 1, y: 1.0000002, z: 1}
+    - name: Canela.L
+      parentName: Perna.L
+      position: {x: 1.4305443e-10, y: 0.0036458701, z: 1.5246768e-10}
+      rotation: {x: -0.11623572, y: -0.0000016017954, z: -0.00008834032, w: 0.99322164}
+      scale: {x: 1, y: 1.0000001, z: 1.0000002}
+    - name: Canela.L_end
+      parentName: Canela.L
+      position: {x: -0, y: 0.0035649734, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Perna.R
+      parentName: Quadril
+      position: {x: 0.0009885562, y: -1.2750217e-18, z: 0.000022991435}
+      rotation: {x: 0.004215664, y: 0.74697465, z: 0.6648218, w: -0.0048033064}
+      scale: {x: 1, y: 0.99999964, z: 1.0000001}
+    - name: Canela.R
+      parentName: Perna.R
+      position: {x: 1.233343e-10, y: 0.0036458715, z: -5.12955e-11}
+      rotation: {x: -0.116232045, y: 0.0000016582844, z: 0.00008837616, w: 0.9932221}
+      scale: {x: 1.0000001, y: 1.0000004, z: 1}
+    - name: Canela.R_end
+      parentName: Canela.R
+      position: {x: -0, y: 0.0035649736, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Homeless_girl
+      parentName: Homeless(Clone)
+      position: {x: -0, y: 0.009284891, z: 0.032172553}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: eyes_Homeless_girl
+      parentName: Homeless(Clone)
+      position: {x: -0, y: 0.018569782, z: 0.06434511}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Tedbear
+      parentName: Homeless(Clone)
+      position: {x: 1.1309303, y: 1.0992284, z: 0.032172553}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -354,7 +1452,7 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
