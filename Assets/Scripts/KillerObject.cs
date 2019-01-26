@@ -14,6 +14,7 @@ public class KillerObject : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
+        Debug.Log("PEGOU O PLAYER");
         if (other.CompareTag("Player"))
         {
             playerInputHandler.playerIsDead = true;

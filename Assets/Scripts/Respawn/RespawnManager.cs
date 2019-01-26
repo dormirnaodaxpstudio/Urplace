@@ -7,8 +7,6 @@ public class RespawnManager : MonoBehaviour
     [SerializeField] private List<GameObject> listOfRespawns;
     [SerializeField] private GameObject character;
 
-    [SerializeField] private Animator blackFadingAnimation;
-
     private PlayerInputHandler playerInputHandler;
 
     void Start()
