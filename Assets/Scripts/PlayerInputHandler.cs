@@ -9,7 +9,8 @@ public class PlayerInputHandler : MonoBehaviour
     public float groundDamping = 10f;
     public float airDamping = 5f;
 
-    public bool gripActive { get; set; }
+    public bool pushGripActive { get; set; }
+    public bool pullGripActive { get; set; }
     public bool handleActive { get; set; }
 
     public Vector3 playerGravity;
@@ -36,6 +37,8 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Update()
     {
+        Interact();
+
         _velocity = _controller.velocity;
         Time.timeScale = Input.GetKey(KeyCode.Space) ? 0.1f : 1f;
 
@@ -46,7 +49,7 @@ public class PlayerInputHandler : MonoBehaviour
         float horizontalAxis = Input.GetAxis("Horizontal");
 
         bool jumpKeys = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
-        if (jumpKeys && _controller.isGrounded && !gripActive || jumpKeys && _controller.isGrounded && !handleActive)
+        if (jumpKeys && _controller.isGrounded && !pushGripActive || jumpKeys && _controller.isGrounded && !handleActive)
             _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
@@ -56,29 +59,53 @@ public class PlayerInputHandler : MonoBehaviour
 
         _controller.Move(_velocity * Time.deltaTime);
 
-        if (horizontalAxis != 0 && !gripActive)
+        if (horizontalAxis != 0 && !pushGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
     }
 
-    private void FixedUpdate()
+    private void Interact()
     {
         if (Input.GetKey(KeyCode.K))
         {
+            float moveDir = Input.GetAxis("Horizontal");
             hitColliders = Physics.OverlapBox(this.transform.position + transform.forward, Vector3.one * 1f);
             foreach (Collider col in hitColliders)
             {
-                if (col.gameObject.CompareTag("Box"))
+                if (col.gameObject.CompareTag("PushBox")) // caixa de Empurrar
                 {
-                    gripActive = true;
-                    col.gameObject.transform.SetParent(this.transform);
-                    col.gameObject.layer = 9; // Layer MoveableObject
+                    pushGripActive = true;
+                    if (moveDir > 0f)
+                    {
+                        col.gameObject.transform.SetParent(this.transform);
+                        col.gameObject.layer = 9; // Layer MoveableObject
+                    }
+                    else
+                    {
+                        pushGripActive = false;
+                        col.gameObject.transform.SetParent(null);
+                        col.gameObject.layer = 0;
+                    }
+                    
                 }
-
-                if (col.gameObject.CompareTag("Handle")) // Lever
+                if (col.gameObject.CompareTag("PullBox")) // caixa de puxar
                 {
-                    handleActive = true;
-                    col.gameObject.transform.SetParent(this.transform);
-                    col.gameObject.layer = 9;
+                    pullGripActive = true;
+                    if (moveDir < 0f)
+                    {
+                        col.gameObject.transform.SetParent(this.transform);
+                        col.gameObject.layer = 9;
+                    }
+                    else
+                    {
+                        pullGripActive = false;
+                        col.gameObject.transform.SetParent(null);
+                        col.gameObject.layer = 0;
+                    }
+                    
+                }
+                if (col.gameObject.CompareTag("Handle")) // Alavanca
+                {
+                    //TODO Ativar alavanca
                 }
             }
         }
@@ -86,16 +113,15 @@ public class PlayerInputHandler : MonoBehaviour
         {
             foreach (Collider col in hitColliders)
             {
-                if (col.gameObject.CompareTag("Box"))
+                if (col.gameObject.CompareTag("PushBox")) // caixa de empurrar
                 {
-                    gripActive = false;
+                    pushGripActive = false;
                     col.gameObject.transform.SetParent(null);
                     col.gameObject.layer = 0;
                 }
-
-                if (col.gameObject.CompareTag("Handle"))
+                if (col.gameObject.CompareTag("PullBox")) // caixa de puxar
                 {
-                    handleActive = false;
+                    pullGripActive = false;
                     col.gameObject.transform.SetParent(null);
                     col.gameObject.layer = 0;
                 }

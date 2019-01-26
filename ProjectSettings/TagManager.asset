@@ -5,7 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Floor
-  - Box
+  - PullBox
+  - Handle
+  - PushBox
   layers:
   - Default
   - TransparentFX
