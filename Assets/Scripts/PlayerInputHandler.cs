@@ -13,6 +13,8 @@ public class PlayerInputHandler : MonoBehaviour
     public bool pullGripActive { get; set; }
     public bool handleActive { get; set; }
 
+    public bool playerIsDead { get; set; }
+
     public Vector3 playerGravity;
     private Vector3 _velocity;
     private Vector3 moveDirection;
@@ -127,6 +129,11 @@ public class PlayerInputHandler : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void KillPlayer()
+    {
+        playerIsDead = true;
     }
 
     private void OnDrawGizmos()

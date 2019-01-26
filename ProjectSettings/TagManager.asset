@@ -8,6 +8,7 @@ TagManager:
   - PullBox
   - Handle
   - PushBox
+  - KillerObject
   layers:
   - Default
   - TransparentFX
@@ -19,7 +20,7 @@ TagManager:
   - 
   - PostProcessing
   - MoveableObject
-  - 
+  - RespawnPoints
   - 
   - 
   - 
