@@ -61,7 +61,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         _controller.Move(_velocity * Time.deltaTime);
 
-        if (horizontalAxis != 0 && !pushGripActive)
+        if (horizontalAxis != 0 && !pushGripActive && !pullGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
     }
 
@@ -75,8 +75,10 @@ public class PlayerInputHandler : MonoBehaviour
             {
                 if (col.gameObject.CompareTag("PushBox")) // caixa de Empurrar
                 {
+                    Debug.Log("CAIXA DE EMPURRAR");
                     pushGripActive = true;
-                    if (moveDir > 0f)
+                    if (moveDir > 0f && col.gameObject.transform.position.x > this.transform.position.x ||
+                        moveDir < 0f && col.gameObject.transform.position.x < this.transform.position.x)
                     {
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9; // Layer MoveableObject
@@ -91,8 +93,10 @@ public class PlayerInputHandler : MonoBehaviour
                 }
                 if (col.gameObject.CompareTag("PullBox")) // caixa de puxar
                 {
+                    Debug.Log("CAIXA DE PUXAR");
                     pullGripActive = true;
-                    if (moveDir < 0f)
+                    if (moveDir < 0f && col.gameObject.transform.position.x > this.transform.position.x ||
+                        moveDir > 0f && col.gameObject.transform.position.x < this.transform.position.x)
                     {
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9;
@@ -103,7 +107,6 @@ public class PlayerInputHandler : MonoBehaviour
                         col.gameObject.transform.SetParent(null);
                         col.gameObject.layer = 0;
                     }
-                    
                 }
                 if (col.gameObject.CompareTag("Handle")) // Alavanca
                 {

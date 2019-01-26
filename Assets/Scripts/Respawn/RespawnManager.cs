@@ -26,6 +26,7 @@ public class RespawnManager : MonoBehaviour
     }
     public void AddRespawnPoint(GameObject newRespawnPoint)
     {
-        listOfRespawns.Add(newRespawnPoint);
+        if (!listOfRespawns.Contains(newRespawnPoint))
+            listOfRespawns.Add(newRespawnPoint);
     }
 }
