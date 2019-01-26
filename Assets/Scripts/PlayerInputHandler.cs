@@ -12,7 +12,10 @@ public class PlayerInputHandler : MonoBehaviour
     public Vector3 playerGravity;
 
     private Vector3 _velocity;
+    private Vector3 moveDirection;
     private PrototypeCharacterControllerv2 _controller;
+
+    TestBox testBox;
 
 #if DEBUGMODE
     private Renderer _renderer;
@@ -22,6 +25,8 @@ public class PlayerInputHandler : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
+        testBox = this.GetComponent<TestBox>();
+
         _controller = GetComponent<PrototypeCharacterControllerv2>();
 
 #if DEBUGMODE
@@ -42,7 +47,7 @@ public class PlayerInputHandler : MonoBehaviour
         float horizontalAxis = Input.GetAxis("Horizontal");
 
         bool jumpKeys = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);// || Input.GetKeyDown(KeyCode.Space);
-        if (jumpKeys && _controller.isGrounded)
+        if (jumpKeys && _controller.isGrounded && !testBox.gripActive)
             _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
@@ -51,6 +56,11 @@ public class PlayerInputHandler : MonoBehaviour
         _velocity += playerGravity * Time.deltaTime;
 
         _controller.Move(_velocity * Time.deltaTime);
+
+        if (horizontalAxis != 0 && !testBox.gripActive)
+        {
+            this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
+        }
     }
 
 }
