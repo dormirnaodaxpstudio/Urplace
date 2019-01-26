@@ -6,16 +6,9 @@ public class Cam : MonoBehaviour
 
     [SerializeField] private Character character;
 
-    private void Update()
+    private void FixedUpdate()
     {
         this.Move();
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Floor")) {
-            
-        }
     }
 
     private void Move()
