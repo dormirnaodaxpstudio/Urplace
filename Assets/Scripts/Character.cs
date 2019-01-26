@@ -5,11 +5,13 @@ public class Character : MonoBehaviour
     [SerializeField] private float speedMovement;
     [SerializeField] private float jumpForce;
 
-    Rigidbody charRb; //rigidbody do personagem
-    public bool isGrounded {get; set;}
+    private Rigidbody charRb; //rigidbody do personagem
+    private Collider c; //Collider do personagem
+    private float distToGround;
 
     void Start()
     {
+        distToGround = GetComponent<Collider>().bounds.extents.y;
         charRb = this.GetComponent<Rigidbody>();
     }
 
@@ -27,9 +29,10 @@ public class Character : MonoBehaviour
 
     void Jump()
     {
-        if (Input.GetMouseButtonDown(0) && isGrounded)
+        if (Input.GetMouseButtonDown(0))
         {
-            // charRb.AddForce(Vector3.up*jumpForce, ForceMode.Impulse);
+            //charRb.AddForce(Vector3.up*jumpForce, ForceMode.Impulse);
+            //GetComponent<Rigidbody>().velocity.y = jumpForce;
             charRb.velocity += jumpForce * Vector3.up;
         }
     }

@@ -10,15 +10,7 @@ public class GroundChecker : MonoBehaviour
     {
         if (other.CompareTag("Floor"))
         {
-            character.isGrounded = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.CompareTag("Floor"))
-        {
-            character.isGrounded = false;
+            //character.isGrounded = true;
         }
     }
 }
