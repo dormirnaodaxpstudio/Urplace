@@ -18,6 +18,7 @@ public class PlayerMechanimController : MonoBehaviour
         SetIsPushing();
         SetIsPulling();
         SetIsDead();
+        SetOnTirolesa();
     }
 
     public void SetWalkingVelocity()
@@ -45,4 +46,8 @@ public class PlayerMechanimController : MonoBehaviour
         charAnimator.SetBool("isDead", playerInputHandler.playerIsDead);
     }
     
+    public void SetOnTirolesa()
+    {
+        charAnimator.SetBool("onTirolesa", playerInputHandler.tirolesaActive);
+    }
 }

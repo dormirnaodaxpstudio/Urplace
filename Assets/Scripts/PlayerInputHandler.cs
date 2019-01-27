@@ -15,7 +15,11 @@ public class PlayerInputHandler : MonoBehaviour
 
     public bool isJumping;
 
+    public bool canMove;
+
     public bool playerIsDead { get; set; }
+
+    public bool tirolesaActive;
 
     public Vector3 playerGravity;
     public Vector3 _velocity;
@@ -32,6 +36,8 @@ public class PlayerInputHandler : MonoBehaviour
     #region MonoBehaviour
     private void Awake()
     {
+        canMove = true;
+        tirolesaActive = false;
         _controller = GetComponent<PrototypeCharacterControllerv2>();
 
 #if DEBUGMODE
@@ -67,7 +73,8 @@ public class PlayerInputHandler : MonoBehaviour
         _velocity.x = Mathf.Lerp(_velocity.x, horizontalAxis * playerSpeed, Time.deltaTime * movementDamping);
         _velocity += playerGravity * Time.deltaTime;
         
-        _controller.Move(_velocity * Time.deltaTime);
+        if (canMove)
+            _controller.Move(_velocity * Time.deltaTime);
 
         if (horizontalAxis != 0 && !pushGripActive && !pullGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));

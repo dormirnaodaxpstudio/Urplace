@@ -9,7 +9,7 @@ TagManager:
   - Handle
   - PushBox
   - KillerObject
-  - Trap
+  - EndTirolesa
   layers:
   - Default
   - TransparentFX
@@ -23,9 +23,9 @@ TagManager:
   - MoveableObject
   - RespawnPoints
   - KillerObject
-  - PullFake
-  - 
-  - 
+  - InteractableObject
+  - Trava
+  - Pull
   - 
   - 
   - 
