@@ -9,6 +9,7 @@ TagManager:
   - Handle
   - PushBox
   - KillerObject
+  - Trap
   layers:
   - Default
   - TransparentFX
@@ -22,7 +23,7 @@ TagManager:
   - MoveableObject
   - RespawnPoints
   - KillerObject
-  - 
+  - PullFake
   - 
   - 
   - 
