@@ -1,22 +1,14 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class KillerObject : MonoBehaviour
 {
-    [SerializeField] private GameObject character;
-    private PlayerInputHandler playerInputHandler;
-
-    void Awake()
-    {
-        playerInputHandler = character.GetComponent<PlayerInputHandler>();
-    }
+    [SerializeField] private PlayerInputHandler playerInputHandler;
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("PEGOU O PLAYER");
         if (other.CompareTag("Player"))
         {
+            Debug.Log("PEGOU O PLAYER");
             playerInputHandler.playerIsDead = true;
         }
     }

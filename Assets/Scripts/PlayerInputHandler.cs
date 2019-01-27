@@ -61,7 +61,6 @@ public class PlayerInputHandler : MonoBehaviour
             isJumping = true;
             _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
         }
-            
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
 
@@ -72,8 +71,6 @@ public class PlayerInputHandler : MonoBehaviour
 
         if (horizontalAxis != 0 && !pushGripActive && !pullGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
-
-        //Debug.Log("velocidade = " + _velocity.x);
     }
 
     private void Interact()
