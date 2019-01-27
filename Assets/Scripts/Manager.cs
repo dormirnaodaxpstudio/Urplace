@@ -3,16 +3,28 @@
 public class Manager : MonoBehaviour
 {
     [SerializeField] private GameObject menu;
+    [SerializeField] PlayerInputHandler playerInputHandler;
 
     private void Awake()
     {
-        Time.timeScale = 0;
+        //Time.timeScale = 0;
+        playerInputHandler.canMove = false;
     }
 
-    public void StartGame()
+    void Update()
     {
-        Time.timeScale = 1;
-        menu.SetActive(false);
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Debug.Log("Jogo iniciado");
+            //Time.timeScale = 1;
+            playerInputHandler.canMove = true;
+            menu.SetActive(false);
+        }
+    }
+
+    public void BacktoMainMenu()
+    {
+        
     }
 
     public void Exit()

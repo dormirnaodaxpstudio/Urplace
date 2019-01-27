@@ -4,6 +4,14 @@ using UnityEngine;
 
 public class Trap : MonoBehaviour
 {
+    bool active;
+    private Vector3 posInitial;
+
+    private void Start()
+    {
+        posInitial = this.transform.position;
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
@@ -15,5 +23,12 @@ public class Trap : MonoBehaviour
         {
             this.GetComponent<Collider>().isTrigger = false;
         }
+    }
+
+    public void Restart()
+    {
+        this.transform.position = posInitial;
+        this.GetComponent<Collider>().isTrigger = false;
+        this.GetComponent<Rigidbody>().useGravity = false;
     }
 }

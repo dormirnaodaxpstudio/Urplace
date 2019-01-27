@@ -36,7 +36,7 @@ public class PlayerInputHandler : MonoBehaviour
     #region MonoBehaviour
     private void Awake()
     {
-        canMove = true;
+        //canMove = true;
         tirolesaActive = false;
         _controller = GetComponent<PrototypeCharacterControllerv2>();
 

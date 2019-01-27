@@ -9,8 +9,13 @@ public class TrapSewer : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            this.GetComponent<Collider>().enabled = false;
             trap.GetComponent<Rigidbody>().useGravity = true;
-            this.gameObject.SetActive(false);
         }
+    }
+
+    public void Restart()
+    {
+        this.GetComponent<Collider>().enabled = true;
     }
 }
