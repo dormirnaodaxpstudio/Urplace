@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657934, g: 0.4964136, b: 0.5748189, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
@@ -700,11 +700,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: 1.4
       objectReference: {fileID: 0}
-    - target: {fileID: 9086301579841781164, guid: f98627038c4e2c542a8853395fb01180,
-        type: 3}
-      propertyPath: groundMask.m_Bits
-      value: 311
-      objectReference: {fileID: 0}
     - target: {fileID: 9086301579841781167, guid: f98627038c4e2c542a8853395fb01180,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -714,6 +709,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Enabled
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086301579841781164, guid: f98627038c4e2c542a8853395fb01180,
+        type: 3}
+      propertyPath: groundMask.m_Bits
+      value: 311
       objectReference: {fileID: 0}
     - target: {fileID: 9086301579841781160, guid: f98627038c4e2c542a8853395fb01180,
         type: 3}
@@ -1126,7 +1126,7 @@ GameObject:
   - component: {fileID: 247709426}
   m_Layer: 0
   m_Name: PushBox (1)
-  m_TagString: PullBox
+  m_TagString: PushBox
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
