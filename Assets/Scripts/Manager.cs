@@ -4,6 +4,7 @@ public class Manager : MonoBehaviour
 {
     [SerializeField] private GameObject menu;
     [SerializeField] PlayerInputHandler playerInputHandler;
+    [SerializeField] private GameObject tutorialsTexts;
 
     private void Awake()
     {
@@ -19,12 +20,9 @@ public class Manager : MonoBehaviour
             //Time.timeScale = 1;
             playerInputHandler.canMove = true;
             menu.SetActive(false);
-        }
-    }
+            tutorialsTexts.SetActive(true);
 
-    public void BacktoMainMenu()
-    {
-        
+        }
     }
 
     public void Exit()

@@ -14,37 +14,37 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isJumping
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isPushing
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isPulling
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: isDead
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: onTirolesa
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
@@ -200,7 +200,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.40468743
+  m_TransitionDuration: 0.04902935
   m_TransitionOffset: 0
   m_ExitTime: 0.12119541
   m_HasExitTime: 0
@@ -218,16 +218,16 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 4
     m_ConditionEvent: walkingVelocity
-    m_EventTreshold: 0.1
+    m_EventTreshold: 0.35
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102319223224641668}
   m_Solo: 0
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.15265596
   m_TransitionOffset: 0
-  m_ExitTime: 0.91176474
+  m_ExitTime: 0.9117647
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -325,9 +325,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.27864587
+  m_TransitionDuration: 0.056936935
   m_TransitionOffset: 0
-  m_ExitTime: 0.11557869
+  m_ExitTime: 0.115578696
   m_HasExitTime: 0
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -425,7 +425,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.20976503
+  m_TransitionDuration: 0.03886167
   m_TransitionOffset: 0
   m_ExitTime: 0.01648661
   m_HasExitTime: 0
@@ -468,7 +468,7 @@ AnimatorStateTransition:
   m_Conditions:
   - m_ConditionMode: 3
     m_ConditionEvent: walkingVelocity
-    m_EventTreshold: 0.1
+    m_EventTreshold: 0.35
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102662865925576374}
   m_Solo: 0
@@ -525,7 +525,7 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 0
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.090646744
   m_TransitionOffset: 0
   m_ExitTime: 0.9130435
   m_HasExitTime: 0
@@ -755,7 +755,7 @@ AnimatorState:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Armature_Homeless_girl_Walk
-  m_Speed: 1.5
+  m_Speed: 1.8
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101039193468592374}
@@ -864,7 +864,7 @@ AnimatorStateMachine:
     m_Position: {x: 540, y: 252, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102609735085842748}
-    m_Position: {x: 540, y: 480, z: 0}
+    m_Position: {x: 600, y: 504, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 1102052561560567578}
     m_Position: {x: 540, y: -336, z: 0}

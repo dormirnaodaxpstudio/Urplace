@@ -70,7 +70,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
 
-        _velocity.x = Mathf.Lerp(_velocity.x, horizontalAxis * playerSpeed, Time.deltaTime * movementDamping);
+        _velocity.x = Mathf.Lerp(_velocity.x, horizontalAxis * playerSpeed, Time.deltaTime * movementDamping/3f); //MUDANÇA AQUI!!! DIVIDI POR 3!!! ASS.: RODRIGO VIEIRA
         _velocity += playerGravity * Time.deltaTime;
         
         if (canMove)
@@ -95,6 +95,7 @@ public class PlayerInputHandler : MonoBehaviour
                     if (moveDir > 0f && col.gameObject.transform.position.x > this.transform.position.x ||
                         moveDir < 0f && col.gameObject.transform.position.x < this.transform.position.x)
                     {
+                        playerSpeed = 3f;
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9; // Layer MoveableObject
                     }
@@ -113,6 +114,7 @@ public class PlayerInputHandler : MonoBehaviour
                     if (moveDir < 0f && col.gameObject.transform.position.x > this.transform.position.x ||
                         moveDir > 0f && col.gameObject.transform.position.x < this.transform.position.x)
                     {
+                        playerSpeed = 3f;
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9;
                     }
@@ -131,6 +133,7 @@ public class PlayerInputHandler : MonoBehaviour
         }
         else if (Input.GetKeyUp(KeyCode.K))
         {
+            playerSpeed = 8f;
             foreach (Collider col in hitColliders)
             {
                 if (col.gameObject.CompareTag("PushBox")) // caixa de empurrar
