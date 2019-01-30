@@ -75,7 +75,7 @@ public class PlayerInputHandler : MonoBehaviour
 
         _velocity.x = Mathf.Lerp(_velocity.x, horizontalAxis * playerSpeed, Time.deltaTime * movementDamping/3f); //MUDANÇA AQUI!!! DIVIDI POR 3!!! ASS.: RODRIGO VIEIRA
         _velocity += playerGravity * Time.deltaTime;
-        
+
         if (canMove)
             _controller.Move(_velocity * Time.deltaTime);
 
