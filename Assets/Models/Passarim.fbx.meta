@@ -1,0 +1,156 @@
+fileFormatVersion: 2
+guid: f4715c3416ebbd947be71ebc1b9668db
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Armature_passarinho
+    100002: Asa.L
+    100004: Asa.L.001
+    100006: Asa.L.002
+    100008: Asa.L.002_end
+    100010: Asa.R
+    100012: Asa.R.001
+    100014: Asa.R.002
+    100016: Asa.R.002_end
+    100018: Base
+    100020: "Cabe\xE7a"
+    100022: Coluna
+    100024: Coluna.001
+    100026: Coluna.002
+    100028: Olhos
+    100030: Olhos_end
+    100032: //RootNode
+    100034: Passarinho
+    100036: pe.L
+    100038: pe.R
+    100040: pe_ponta.L
+    100042: pe_ponta.L_end
+    100044: pe_ponta.R
+    100046: pe_ponta.R_end
+    100048: Perna.L
+    100050: Perna.R
+    100052: Radinho
+    100054: Radinho.001
+    100056: Radinho.001_end
+    400000: Armature_passarinho
+    400002: Asa.L
+    400004: Asa.L.001
+    400006: Asa.L.002
+    400008: Asa.L.002_end
+    400010: Asa.R
+    400012: Asa.R.001
+    400014: Asa.R.002
+    400016: Asa.R.002_end
+    400018: Base
+    400020: "Cabe\xE7a"
+    400022: Coluna
+    400024: Coluna.001
+    400026: Coluna.002
+    400028: Olhos
+    400030: Olhos_end
+    400032: //RootNode
+    400034: Passarinho
+    400036: pe.L
+    400038: pe.R
+    400040: pe_ponta.L
+    400042: pe_ponta.L_end
+    400044: pe_ponta.R
+    400046: pe_ponta.R_end
+    400048: Perna.L
+    400050: Perna.R
+    400052: Radinho
+    400054: Radinho.001
+    400056: Radinho.001_end
+    2100000: Presto
+    2100002: Branco
+    4300000: Passarinho
+    7400000: Armature_passarinho|Passarim
+    7400002: Armature_passarinho|PosePadrao
+    9500000: //RootNode
+    13700000: Passarinho
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    useSRGBMaterialColor: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+    legacyComputeAllNormalsFromSmoothingGroupsWhenMeshHasBlendShapes: 0
+    blendShapeNormalImportMode: 1
+    normalSmoothingSource: 0
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -64,8 +64,11 @@ public class PlayerInputHandler : MonoBehaviour
         bool jumpKeys = Input.GetKeyDown(KeyCode.W) || Input.GetKeyDown(KeyCode.UpArrow);
         if (jumpKeys && _controller.isGrounded && !pushGripActive || jumpKeys && _controller.isGrounded && !handleActive)
         {
-            isJumping = true;
-            _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
+            if (!pushGripActive && !pullGripActive)
+            {
+                isJumping = true;
+                _velocity.y = Mathf.Sqrt(2f * jumpHeight * -playerGravity.y);
+            }
         }
 
         float movementDamping = _controller.isGrounded ? groundDamping : airDamping;
