@@ -6,6 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/GameFix-Rodrigo.unity
+    path: Assets/Scenes/Game.unity
     guid: 94703f9404371c549af2527bcd84bfd3
   m_configObjects: {}

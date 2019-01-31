@@ -3,21 +3,19 @@
 public class Manager : MonoBehaviour
 {
     [SerializeField] private GameObject menu;
-    [SerializeField] PlayerInputHandler playerInputHandler;
+    [SerializeField] private PlayerInputHandler playerInputHandler;
     [SerializeField] private GameObject tutorialsTexts;
 
     private void Awake()
     {
-        //Time.timeScale = 0;
         playerInputHandler.canMove = false;
     }
 
-    void Update()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Debug.Log("Jogo iniciado");
-            //Time.timeScale = 1;
             playerInputHandler.canMove = true;
             menu.SetActive(false);
             tutorialsTexts.SetActive(true);
@@ -27,6 +25,10 @@ public class Manager : MonoBehaviour
 
     public void Exit()
     {
-        Application.Quit();
+        #if UNITY_EDITOR
+		UnityEditor.EditorApplication.isPlaying = false;
+		#else
+		Application.Quit();
+		#endif
     }
 }
