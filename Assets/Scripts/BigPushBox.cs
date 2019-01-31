@@ -1,13 +1,10 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BigPushBox : MonoBehaviour
 {
-    [SerializeField] PlayerInputHandler playerInputHandler;
+    [SerializeField] private PlayerInputHandler playerInputHandler;
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
         if (this.transform.position.x >= 428.6f)
         {
@@ -15,6 +12,5 @@ public class BigPushBox : MonoBehaviour
             this.transform.SetParent(null);
             this.gameObject.layer = 0;
         }
-
     }
 }

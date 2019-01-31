@@ -1,6 +1,8 @@
 ﻿#define DEBUGMODE
-using UnityEngine;
 using System.Collections;
+
+using UnityEngine;
+using UnityEngine.Audio;
 
 public class PlayerInputHandler : MonoBehaviour
 {
@@ -12,13 +14,9 @@ public class PlayerInputHandler : MonoBehaviour
     public bool pushGripActive { get; set; }
     public bool pullGripActive { get; set; }
     public bool handleActive { get; set; }
-
     public bool isJumping;
-
     public bool canMove;
-
     public bool playerIsDead { get; set; }
-
     public bool tirolesaActive;
 
     public Vector3 playerGravity;
@@ -26,6 +24,8 @@ public class PlayerInputHandler : MonoBehaviour
     private Vector3 moveDirection;
 
     private Collider[] hitColliders;
+
+    [SerializeField] private AudioSource dragBoxSFX;
 
     private PrototypeCharacterControllerv2 _controller;
 
@@ -36,7 +36,6 @@ public class PlayerInputHandler : MonoBehaviour
     #region MonoBehaviour
     private void Awake()
     {
-        //canMove = true;
         tirolesaActive = false;
         _controller = GetComponent<PrototypeCharacterControllerv2>();
 
@@ -82,6 +81,7 @@ public class PlayerInputHandler : MonoBehaviour
         if (horizontalAxis != 0 && !pushGripActive && !pullGripActive)
             this.transform.forward = Vector3.Normalize(new Vector3(horizontalAxis, 0, 0));
     }
+    #endregion
 
     private void Interact()
     {
@@ -101,14 +101,15 @@ public class PlayerInputHandler : MonoBehaviour
                         playerSpeed = 3f;
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9; // Layer MoveableObject
+                        this.AudioDragBox(true);
                     }
                     else
                     {
                         pushGripActive = false;
                         col.gameObject.transform.SetParent(null);
                         col.gameObject.layer = 0;
+                        this.AudioDragBox(false);
                     }
-                    
                 }
                 if (col.gameObject.CompareTag("PullBox")) // caixa de puxar
                 {
@@ -120,17 +121,15 @@ public class PlayerInputHandler : MonoBehaviour
                         playerSpeed = 3f;
                         col.gameObject.transform.SetParent(this.transform);
                         col.gameObject.layer = 9;
+                        this.AudioDragBox(true);
                     }
                     else
                     {
                         pullGripActive = false;
                         col.gameObject.transform.SetParent(null);
                         col.gameObject.layer = 0;
+                        this.AudioDragBox(false);
                     }
-                }
-                if (col.gameObject.CompareTag("Handle")) // Alavanca
-                {
-                    //TODO Ativar alavanca
                 }
             }
         }
@@ -144,12 +143,14 @@ public class PlayerInputHandler : MonoBehaviour
                     pushGripActive = false;
                     col.gameObject.transform.SetParent(null);
                     col.gameObject.layer = 0;
+                    this.AudioDragBox(false);
                 }
                 if (col.gameObject.CompareTag("PullBox")) // caixa de puxar
                 {
                     pullGripActive = false;
                     col.gameObject.transform.SetParent(null);
                     col.gameObject.layer = 0;
+                    this.AudioDragBox(false);
                 }
             }
         }
@@ -160,10 +161,14 @@ public class PlayerInputHandler : MonoBehaviour
         playerIsDead = true;
     }
 
-    private void OnDrawGizmos()
+    public void AudioDragBox(bool active)
     {
-        Gizmos.color = Color.red;
-        Gizmos.DrawWireCube(this.transform.position + transform.forward, Vector3.one * 2f);
+        if (active)
+        {
+            if (!dragBoxSFX.isPlaying)
+                dragBoxSFX.PlayDelayed(0.15f);
+        }
+        else
+            dragBoxSFX.Stop();
     }
-    #endregion
 }

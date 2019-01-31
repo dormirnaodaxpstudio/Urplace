@@ -1,16 +1,8 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class EnableDisableInputs : MonoBehaviour
 {
-    [SerializeField] GameObject character;
-    PlayerInputHandler playerInputHandler;
-
-    private void Awake()
-    {
-        playerInputHandler = character.GetComponent<PlayerInputHandler>();
-    }
+    [SerializeField] private PlayerInputHandler playerInputHandler;
 
     public void EnableControllerInputs()
     {

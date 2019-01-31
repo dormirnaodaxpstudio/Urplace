@@ -19,8 +19,10 @@ public class RespawnManager : MonoBehaviour
 
     public void Restart()
     {
-        foreach (GameObject obj in objectsRestart) {
-			if (obj != null) {
+        foreach (GameObject obj in objectsRestart)
+        {
+			if (obj != null)
+            {
 				obj.SendMessage("Restart");
 			}
 		}

@@ -1,11 +1,15 @@
 ﻿using System.Collections.Generic;
 
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class Trap : MonoBehaviour
 {
-    bool active;
+    private bool active;
+    
     private Vector3 posInitial;
+
+    [SerializeField] private AudioSource impactSFX;
 
     private void Start()
     {
@@ -22,6 +26,7 @@ public class Trap : MonoBehaviour
         if (other.CompareTag("Floor"))
         {
             this.GetComponent<Collider>().isTrigger = false;
+            this.AudioImpact();
         }
     }
 
@@ -30,5 +35,10 @@ public class Trap : MonoBehaviour
         this.transform.position = posInitial;
         this.GetComponent<Collider>().isTrigger = false;
         this.GetComponent<Rigidbody>().useGravity = false;
+    }
+
+    public void AudioImpact()
+    {
+        impactSFX.Play();
     }
 }
