@@ -10,6 +10,7 @@ TagManager:
   - PushBox
   - KillerObject
   - EndTirolesa
+  - BigPushBox
   layers:
   - Default
   - TransparentFX

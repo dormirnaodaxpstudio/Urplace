@@ -46,12 +46,17 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Update()
     {
-        if (this.transform.position.x < 10.5f)
+        //Controle de velocidade do personagem para storyteeling
+        if (this.transform.position.x < 10.5f || (this.transform.position.x > 296f && this.transform.position.x < 310f))
             playerSpeed = 3f;
-
+        else if ((this.transform.position.x > 109f && this.transform.position.x < 121f) || this.transform.position.x > 546f)
+            playerSpeed = 6f;
+        else
+            playerSpeed = 8f;
 
         if (_controller.isGrounded)
             isJumping = false;
+        //********************
 
         Interact();
 
@@ -92,10 +97,12 @@ public class PlayerInputHandler : MonoBehaviour
         if (Input.GetKey(KeyCode.K))
         {
             float moveDir = Input.GetAxis("Horizontal");
-            hitColliders = Physics.OverlapBox(this.transform.position + transform.forward, Vector3.one * 1f);
+            hitColliders = Physics.OverlapBox(this.transform.position + transform.forward, Vector3.one * 0.2f);
             foreach (Collider col in hitColliders)
             {
-                if (col.gameObject.CompareTag("PushBox")) // caixa de Empurrar
+                SetDistanceBetweenPlayerandBox(this.gameObject, col.gameObject);
+
+                if (col.gameObject.CompareTag("PushBox") || col.gameObject.CompareTag("BigPushBox")) // caixa de Empurrar
                 {
                     Debug.Log("CAIXA DE EMPURRAR");
                     pushGripActive = true;
@@ -142,7 +149,7 @@ public class PlayerInputHandler : MonoBehaviour
             playerSpeed = 8f;
             foreach (Collider col in hitColliders)
             {
-                if (col.gameObject.CompareTag("PushBox")) // caixa de empurrar
+                if (col.gameObject.CompareTag("PushBox") || col.gameObject.CompareTag("BigPushBox")) // caixa de empurrar
                 {
                     pushGripActive = false;
                     col.gameObject.transform.SetParent(null);
@@ -157,6 +164,37 @@ public class PlayerInputHandler : MonoBehaviour
                     this.AudioDragBox(false);
                 }
             }
+        }
+    }
+
+    public void SetDistanceBetweenPlayerandBox(GameObject player, GameObject box)
+    {
+        string typeOfBox = box.tag;
+
+        switch(typeOfBox)
+        {
+            case "PushBox":
+                if (player.transform.position.x < box.transform.position.x)
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x - 2.2f,player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                else
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x + 2.2f, player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                return;
+
+            case "PullBox":
+                if (player.transform.position.x < box.transform.position.x)
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x - 2.2f, player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                else
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x + 2.2f, player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                return;
+
+            case "BigPushBox":
+                if (player.transform.position.x < box.transform.position.x)
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x - 5.8f, player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                else
+                    player.transform.SetPositionAndRotation(new Vector3(box.transform.position.x + 5.8f, player.transform.position.y, player.transform.position.z), player.gameObject.transform.rotation);
+                return;
+            default:
+                return;
         }
     }
 

@@ -9,12 +9,15 @@ public class ChangeMusicCollider : MonoBehaviour
     [SerializeField] AudioSource endPianoMusic2;
     [SerializeField] Animator pianoAnimator;
 
+    private GameObject character;
+
     private bool changeMusic = false;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
+            character = other.gameObject;
             changeMusic = true;
             pianoAnimator.enabled = true;
         }
@@ -22,7 +25,7 @@ public class ChangeMusicCollider : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (changeMusic)
+        if (changeMusic && character.transform.position.x < 546f) //no final esse if nao pode mais rodar, para abaixar a música no final do crédito.
         {
             if (themeMusic.volume > 0f)
                 themeMusic.volume -= 0.3f * Time.deltaTime;

@@ -25,7 +25,7 @@ public class HouseCollider : MonoBehaviour
         thankYouForPlayingPanel.SetActive(true);
         yield return new WaitForSeconds(3f);
         playerInputHandler.transform.Translate(new Vector3(-7.26f, -0.08f, 0f));
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(55f);
         SceneManager.LoadScene("Game");
     }
 }
