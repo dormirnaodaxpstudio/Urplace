@@ -6,11 +6,13 @@ public class TriggerTirolesa : MonoBehaviour
 {
     [SerializeField] PlayerInputHandler playerInputHandler;
     Animator tirolesaAnimation;
-    [SerializeField] Animator charTirolesaAnimation; 
+    [SerializeField] Animator charTirolesaAnimation;
+    AudioSource ziplineSound;
 
     void Awake()
     {
         tirolesaAnimation = this.GetComponent<Animator>();
+        ziplineSound = this.GetComponent<AudioSource>();
     }
     void OnTriggerEnter(Collider other)
     {   
@@ -19,6 +21,7 @@ public class TriggerTirolesa : MonoBehaviour
             playerInputHandler.tirolesaActive = true;
             tirolesaAnimation.enabled = true;
             charTirolesaAnimation.enabled = true;
+            ziplineSound.Play();
         }
         
     }

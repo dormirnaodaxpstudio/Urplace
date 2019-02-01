@@ -26,10 +26,10 @@ public class ChangeMusicCollider : MonoBehaviour
         {
             if (themeMusic.volume > 0f)
                 themeMusic.volume -= 0.3f * Time.deltaTime;
-            if (endPianoMusic.volume < 1f)
+            if (endPianoMusic.volume < 0.9f)
             {
-                endPianoMusic.volume += 0.5f * Time.deltaTime;
-                endPianoMusic2.volume += 0.5f * Time.deltaTime;
+                endPianoMusic.volume += 0.45f * Time.deltaTime;
+                endPianoMusic2.volume += 0.45f * Time.deltaTime;
             }
                 
         }

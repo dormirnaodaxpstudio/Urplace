@@ -4,6 +4,7 @@ public class TrapWater : MonoBehaviour
 {
     [SerializeField] private GameObject water;
     [SerializeField] private Animation anim;
+    [SerializeField] private AudioSource waterGoingUpSound;
 
     private Vector3 posInitial;
 
@@ -17,6 +18,7 @@ public class TrapWater : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             water.SetActive(true);
+            waterGoingUpSound.Play();
             anim.Play();
             this.GetComponent<Collider>().enabled = false;
         }

@@ -9,14 +9,14 @@ public class Trap : MonoBehaviour
     
     private Vector3 posInitial;
 
-    [SerializeField] private AudioSource impactSFX;
+    //[SerializeField] private AudioSource impactSFX;
 
     private void Start()
     {
         posInitial = this.transform.position;
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -28,7 +28,7 @@ public class Trap : MonoBehaviour
             this.GetComponent<Collider>().isTrigger = false;
             this.AudioImpact();
         }
-    }
+    }*/
 
     public void Restart()
     {
@@ -37,8 +37,8 @@ public class Trap : MonoBehaviour
         this.GetComponent<Rigidbody>().useGravity = false;
     }
 
-    public void AudioImpact()
+    /* public void AudioImpact()
     {
         impactSFX.Play();
-    }
+    }*/
 }

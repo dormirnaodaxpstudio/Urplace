@@ -46,6 +46,10 @@ public class PlayerInputHandler : MonoBehaviour
 
     private void Update()
     {
+        if (this.transform.position.x < 10.5f)
+            playerSpeed = 3f;
+
+
         if (_controller.isGrounded)
             isJumping = false;
 
