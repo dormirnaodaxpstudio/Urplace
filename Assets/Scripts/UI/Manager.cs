@@ -47,10 +47,12 @@ public class Manager : MonoBehaviour
     public void Exit()
     {
         #if UNITY_EDITOR
-		UnityEditor.EditorApplication.isPlaying = false;
-		#else
-		Application.Quit();
-		#endif
+        UnityEditor.EditorApplication.isPlaying = false;
+        #elif UNITY_STANDALONE
+        Application.Quit();
+        #elif UNITY_WEBGL
+        Application.OpenURL("about:blank");
+        #endif
     }
 
     public void ShowMouse(bool active)
