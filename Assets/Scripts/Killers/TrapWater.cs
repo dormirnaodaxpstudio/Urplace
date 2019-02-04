@@ -17,18 +17,18 @@ public class TrapWater : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            this.GetComponent<Collider>().enabled = false;
             water.SetActive(true);
-            anim.Play();
             waterGoingUpSound.Play();
+            anim.Play();
+            this.GetComponent<Collider>().enabled = false;
         }
     }
 
     public void Restart()
     {
-        this.GetComponent<Collider>().enabled = true;
         anim.Stop();
         water.transform.position = posInitial;
         water.SetActive(false);
+        this.GetComponent<Collider>().enabled = true;
     }
 }

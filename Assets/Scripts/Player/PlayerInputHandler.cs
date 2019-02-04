@@ -49,7 +49,7 @@ public class PlayerInputHandler : MonoBehaviour
         //Controle de velocidade do personagem para storyteeling
         if (this.transform.position.x < 10.5f || (this.transform.position.x > 296f && this.transform.position.x < 310f))
             playerSpeed = 3f;
-        else if ((this.transform.position.x > 109f && this.transform.position.x < 121f) || this.transform.position.x > 546f)
+        else if ((this.transform.position.x > 109f && this.transform.position.x < 121f) || this.transform.position.x > 540f)
             playerSpeed = 6f;
         else
             playerSpeed = 8f;
@@ -61,7 +61,7 @@ public class PlayerInputHandler : MonoBehaviour
         Interact();
 
         _velocity = _controller.velocity;
-        Time.timeScale = Input.GetKey(KeyCode.Space) ? 0.1f : 1f;
+        //Time.timeScale = Input.GetKey(KeyCode.Space) ? 0.1f : 1f;
 
 #if DEBUGMODE
         _renderer.material.color = _controller.isGrounded ? Color.green : Color.red;

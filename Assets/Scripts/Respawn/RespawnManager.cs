@@ -32,6 +32,7 @@ public class RespawnManager : MonoBehaviour
     {
         if (playerInputHandler.playerIsDead)
         {
+            playerInputHandler.canMove = false;
             CallDeadAnimation();
         }
     }
@@ -50,6 +51,7 @@ public class RespawnManager : MonoBehaviour
     public void CallTeleport()
     {
         this.Restart();
+        playerInputHandler.canMove = true;
         playerInputHandler.playerIsDead = false;
         character.transform.position = listOfRespawns[listOfRespawns.Count -1].transform.position;
     }
