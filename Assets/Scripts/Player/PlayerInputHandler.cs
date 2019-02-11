@@ -47,12 +47,12 @@ public class PlayerInputHandler : MonoBehaviour
     private void Update()
     {
         //Controle de velocidade do personagem para storyteeling
-        if (this.transform.position.x < 10.5f || (this.transform.position.x > 296f && this.transform.position.x < 310f))
+        if (this.transform.position.x < 11f || (this.transform.position.x > 296f && this.transform.position.x < 310f))
             playerSpeed = 3f;
         else if ((this.transform.position.x > 109f && this.transform.position.x < 121f) || this.transform.position.x > 540f)
             playerSpeed = 6f;
         else
-            playerSpeed = 8f;
+            playerSpeed = 7f;
 
         if (_controller.isGrounded)
             isJumping = false;
